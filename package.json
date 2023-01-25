@@ -1,0 +1,21 @@
+{
+  "name": "odin-mobilemenu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/mobilemenu.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:lib": "webpack --config webpack.config-lib.js",
+    "build:example": "webpack --config webpack.config-example.js",
+    "build": "run-s build:lib build:example",
+    "postbuild": "copyfiles -f ./dist/*.js ./example/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
