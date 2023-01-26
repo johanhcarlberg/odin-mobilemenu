@@ -2,4 +2,13 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
+    border: none;
+}
+
+.menu-button-light {
+    background-color: #ffffff;
+}
+
+.menu-button-light:hover {
+    background-color: #ddd;
 }
