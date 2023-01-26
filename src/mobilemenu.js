@@ -15,6 +15,16 @@ export default class MobileMenu {
 
         this.menuContainer = document.createElement('div');
         this.menuContainer.classList.add('menu-container');
+
+        document.addEventListener('click', (e) => {
+            if (!this.menuContainer.classList.contains('visible')) {
+                return;
+            }
+
+            if (!this.menuButton.contains(e.target) && !this.menuContainer.contains(e.target)) {
+                this.toggle();
+            }
+        })
     }
 
     toggle() {
