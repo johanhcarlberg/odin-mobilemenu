@@ -24,3 +24,17 @@
 .menu-button-dark:hover {
     background-color: #555555;
 }
+
+.menu-container.visible {
+    visibility: visible;
+    width: 300px;
+}
+
+.menu-container {
+    overflow: hidden;
+    max-width: 350px;
+    width: 0;
+    visibility: hidden;
+    background-color: #fff;
+    transition: width 500ms,visibility 500ms;
+}
