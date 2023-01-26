@@ -1,5 +1,6 @@
 import './mobilemenu.css';
 import menuSvg from './assets/menu.svg';
+import MenuItem from './menuItem';
 
 export default class MobileMenu {
     /**
@@ -18,5 +19,9 @@ export default class MobileMenu {
 
     toggle() {
         this.menuContainer.classList.toggle('visible');
+    }
+
+    addItem(title, url) {
+        this.menuContainer.appendChild(new MenuItem(title, url));
     }
 }
