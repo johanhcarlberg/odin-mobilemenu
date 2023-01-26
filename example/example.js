@@ -8,5 +8,7 @@ const menu = new MobileMenu();
 const menuButton = menu.menuButton;
 const menuContainer = menu.menuContainer;
 
+menu.addItem('Home', '');
+
 header.appendChild(menuButton);
 main.appendChild(menuContainer);
