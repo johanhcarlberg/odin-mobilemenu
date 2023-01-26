@@ -40,4 +40,6 @@
     visibility: hidden;
     background-color: #fff;
     transition: width 500ms,visibility 500ms;
+    display: grid;
+    grid-template-columns: 1fr;
 }
