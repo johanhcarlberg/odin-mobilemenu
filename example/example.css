@@ -11,21 +11,43 @@ body {
 }
 
 main {
-    background-color: skyblue;
+    background-color: #eee;
     grid-row: 2;
     grid-column: auto;
     grid-column: 1 / span 3;
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
 }
 
 header {
     background-color: #444;
-    grid-column: 1 / span 3;
+    grid-column: span 3;
     grid-row: 1;
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
 }
 
 .content {
-    background-color: #eee;
     grid-column: 2;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.menu-container {
+    grid-column: 1 / 1;
+    grid-row: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-container {
+        grid-column: 1 / -1;
+        z-index: 2;
+    }
+
+    .content {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
 }

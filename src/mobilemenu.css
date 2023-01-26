@@ -3,6 +3,9 @@
     height: 30px;
     border-radius: 100%;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-button:hover {
