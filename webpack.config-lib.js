@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        dropdown: './src/mobilemenu.js',
+        mobilemenu: './src/mobilemenu.js',
     },
     output: {
         filename: '[name].min.js',
