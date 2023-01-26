@@ -5,6 +5,10 @@
     border: none;
 }
 
+.menu-button:hover {
+    cursor: pointer;
+}
+
 .menu-button-light {
     background-color: #ffffff;
 }
