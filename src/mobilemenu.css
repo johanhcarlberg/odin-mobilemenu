@@ -12,3 +12,11 @@
 .menu-button-light:hover {
     background-color: #ddd;
 }
+
+.menu-button-dark {
+    background-color: #333333;
+}
+
+.menu-button-dark:hover {
+    background-color: #555555;
+}
