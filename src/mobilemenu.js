@@ -31,7 +31,7 @@ export default class MobileMenu {
         this.menuContainer.classList.toggle('visible');
     }
 
-    addItem(title, url) {
-        this.menuContainer.appendChild(new MenuItem(title, url));
+    addItem(title, url, openInNew) {
+        this.menuContainer.appendChild(new MenuItem(title, url, openInNew));
     }
 }
