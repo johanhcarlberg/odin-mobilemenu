@@ -9,7 +9,7 @@
     "build:lib": "webpack --config webpack.config-lib.js",
     "build:example": "webpack --config webpack.config-example.js",
     "build": "run-s build:lib build:example",
-    "postbuild": "copyfiles -f ./dist/*.js ./example/dist"
+    "postbuild": "copyfiles -f ./dist/*.js ./example/*.html ./example/dist"
   },
   "keywords": [],
   "author": "",
