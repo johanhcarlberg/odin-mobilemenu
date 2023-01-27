@@ -1,6 +1,7 @@
 .menu-item {
-    padding: 10px 20px;
-    height: 30px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .menu-item:hover {
@@ -8,9 +9,11 @@
 }
 
 .menu-item a {
-    display: grid;
-    align-items: center;
+    padding: 10px 20px;
+    display: block;
+    flex: 1;
     height: 100%;
     text-decoration: none;
     color: #222;
+    box-sizing: border-box;
 }
